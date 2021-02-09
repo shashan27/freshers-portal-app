@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A4EAE4E4"
+    tools:context=".Student.NotesFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbargrp"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="#349C92"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/backToProfile"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="6dp"
+                android:src="@drawable/logo_splash" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="0dp"
+                android:fontFamily="@font/knewave"
+                android:padding="8dp"
+                android:text="Materials"
+                android:textColor="#E8FFFFFF"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/material_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbargrp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/ques_paper_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill"
+            android:layout_marginHorizontal="10dp"
+            android:clickable="true"
+            android:layout_marginVertical="10dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="18dp"
+                android:background="@drawable/gradient">
+
+                <TextView
+                    android:id="@+id/prev_ques_paper"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pr. Year Question Paper :"
+                    android:textAlignment="center"
+                    android:textColor="#020202"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/desc1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/prev_ques_paper"
+                    android:layout_marginTop="0dp"
+                    android:paddingEnd="18dp"
+                    android:text="Find here some previous year question papers  to solve  "
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp" />
+
+                <ImageButton
+                    android:id="@+id/prev_ques_paper_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/desc1"
+                    android:layout_alignParentRight="true"
+                    android:background="@null"
+                    android:clickable="true"
+                    android:src="@drawable/ic_baseline_next_plan_24"
+                    android:tint="#DA070707" />
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/books_pdf_card"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="fill"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="30dp"
+            android:clickable="true"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="18dp"
+                android:background="@drawable/gradient">
+
+                <TextView
+                    android:id="@+id/pdfs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Books / PDFs  :"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/desc2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/pdfs"
+                    android:paddingEnd="18dp"
+                    android:text="Looking for some resources to prepare ?  Click here for books and pdfs. "
+                    android:textColor="@color/colorWhite"
+                    android:textSize="14sp" />
+
+                <ImageButton
+                    android:id="@+id/pdfs_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/desc2"
+                    android:layout_alignParentRight="true"
+                    android:background="@null"
+                    android:clickable="true"
+                    android:src="@drawable/ic_baseline_next_plan_24"
+                    android:tint="#DA070707" />
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/notes_card"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="fill"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="10dp"
+            android:clickable="true"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="18dp"
+                android:background="@drawable/gradient">
+
+                <TextView
+                    android:id="@+id/notes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Notes:"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/desc3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/notes"
+                    android:paddingEnd="18dp"
+                    android:text="Here you can find some notes. Click here to find more. "
+                    android:textColor="@color/colorWhite"
+                    android:textSize="14sp" />
+
+                <ImageButton
+                    android:id="@+id/gallery_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/desc3"
+                    android:layout_alignParentRight="true"
+                    android:background="@null"
+                    android:clickable="true"
+                    android:src="@drawable/ic_baseline_next_plan_24"
+                    android:tint="#DA070707" />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="148dp"
+        android:layout_below="@+id/material_section"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="113dp"
+        android:background="@color/colorWhite">
+
+
+        <TextView
+            android:id="@+id/grpmsg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1"
+            android:hint="Wanna contribute ?"
+            android:padding="15dp"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/sendgrpmsg"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_below="@+id/grpmsg"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="21dp"
+            android:layout_marginRight="21dp"
+            android:background="@drawable/buttonstylegradient"
+            android:text="Upload"
+            android:textColor="#FFFFFF" />
+    </RelativeLayout>
+
+</RelativeLayout>
+
+

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A4EAE4E4"
+    tools:context=".AnnouncementsActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbargrp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#349C92"
+        android:gravity="top"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="58dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="6dp"
+        android:fontFamily="@font/knewave"
+        android:paddingLeft="50dp"
+        android:text="@string/announcements"
+        android:textColor="#E8FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/logoSplash"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="194dp"
+        app:layout_constraintBottom_toTopOf="@+id/announce"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/logo_splash" />
+
+    <ImageView
+        android:id="@+id/nit_logo"
+        android:layout_width="141dp"
+        android:layout_height="125dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginEnd="151dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/announce"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/nit_logo" />
+
+    <TextView
+        android:id="@+id/announce"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="33dp"
+        android:background="@android:color/white"
+        android:padding="8dp"
+        android:scrollbars="vertical"
+        android:text="TextView"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nit_logo" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

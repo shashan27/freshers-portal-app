@@ -9,7 +9,10 @@
 
 ## Overview:
 
-Creating an app for Freshers Student for them to connect with Seniors and Alumni of our college.Chating with the seniors will be the main features...Seniors and Alumni can also write blog describing how they started preparing for competitive coding,placement like things....Other than that we can have previous year department wise question and notes for students.We will be giving some special rights to alumni so that no one can disturb them,,etc..
+* Creating an app for Freshers Student for them to connect with Seniors and Alumni of our college.
+* Chating with the seniors is the main Agenda...
+* Seniors and Alumni can also write blog describing how they started preparing for competitive coding,placement like things....
+* Previous year department wise question and notes for students.
 
 ## Goals:
 
@@ -19,7 +22,7 @@ Creating an app for Freshers Student for them to connect with Seniors and Alumni
 
 ## Scalability
 
-* Mainly Freshers Student will be benifitted through this,<br />
+* Mainly Freshers Student will be benefitted through this,<br />
 * Other than that,It will help every semester student (as we are providing notes and semester wise question  paper)
 
 ## Tech Stacks Required:
