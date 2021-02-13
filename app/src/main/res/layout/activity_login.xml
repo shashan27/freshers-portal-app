@@ -105,7 +105,7 @@
             android:textColor="@color/primaryTextColor"
             android:textSize="@dimen/newsMoreTextSize" />
 
-        <Button
+        <br.com.simplepass.loading_button_lib.customViews.CircularProgressButton
             android:id="@+id/login"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -124,7 +124,6 @@
             android:id="@+id/createaccount"
             style="@style/parent"
             android:layout_marginTop="@dimen/loginViewsMargin"
-            android:onClick="onLoginClick"
             android:text="New user? Register Now"
             android:textAlignment="center"
             android:textColor="@color/primaryTextColor"
